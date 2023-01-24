@@ -1,0 +1,41 @@
+/* Write your CSS code here */
+.blog-img-container {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.img-size {
+  width: 100%;
+}
+
+.para {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.img-para-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mini-img-size {
+  height: 35px;
+  width: 35px;
+  border-radius: 45px;
+}
+
+.para-img {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
