@@ -1,30 +1,27 @@
-// Write your JS code here
+import {Link} from 'react-router-dom'
 import './index.css'
 
-
 // Write your JS code here
-const BlogItem = (props)=>{
-    return(
-        <div className="blog-img-container">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/wave-logo-img.png"
-            alt="wave"
-            className="img-size"
-          />
+const BlogItem = props => {
+  const {eachListItem} = props
+  const {title, imageUrl, avatarUrl, author, topic, id} = eachListItem
+  return (
+    <Link to={`/blogs/${id}`}>
+      <li className="blog-list">
+        <div data-testid="loader">
+          <img src={imageUrl} alt="imgUrl" className="img-size" />
         </div>
         <div className="description-para">
-          <p className="para">React.js</p>
-          <h1 className="heading">Heading</h1>
+          <p className="para">{topic}</p>
+          <h1 className="heading">{title}</h1>
           <div className="img-para-container">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/wave-logo-img.png"
-              alt="wave_1"
-              className="mini-img-size"
-            />
-            <p className="para-img">React.js</p>
+            <img src={avatarUrl} alt="avatar" className="mini-img-size" />
+            <p className="para-img">{author}</p>
           </div>
         </div>
-    )
-    }
+      </li>
+    </Link>
+  )
+}
 
 export default BlogItem

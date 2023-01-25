@@ -1,1 +1,46 @@
 /* Write your CSS code here */
+.blog-details-container {
+  padding: 25px;
+}
+
+.blog-detail-img-para-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.blog-detail-img-size {
+  height: 350px;
+  width: 849px;
+  border-radius: 9px;
+  margin-right: 15px;
+  margin-left: 4px;
+}
+
+.blog-detail-mini-img-size {
+  height: 35px;
+  width: 35px;
+  border-radius: 45px;
+}
+
+.blog-detail-para-img {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-left: 10px;
+}
+
+.title-heading {
+  text-align: center;
+}
+
+.content-para {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-left: 10px;
+  padding-left: 0;
+}
